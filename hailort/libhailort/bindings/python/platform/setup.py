@@ -24,7 +24,7 @@ def _get_pyhailort_lib_path():
     with open(conf_file_path, "r") as conf_file:
         content = json.load(conf_file)
         # TODO (HRT-8637): change this hard-coded path
-        return f"../hailo_platform/pyhailort/_pyhailort*{content['py_version']}*{content['arch']}*.{extension}"
+        return f"./hailo_platform/pyhailort/_pyhailort*{content['py_version']}*{content['arch']}*.{extension}"
 
 def _get_package_paths():
     packages = []
